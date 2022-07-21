@@ -5,21 +5,31 @@
 <head>
 
     <title>Personal Details</title>
+    <style>
+        div.container{
+            text-align:left;
+        }
+        ul.myul{
+        text-align:left;
+        display: inline-block;
+        }
+    </style>
 </head>
 
-<body>
-    <h1>Personal Details</h1>
-    <ul>
+<body style="background-color:#CCF3EE;">
+    <h1 style="background-image:linear-gradient(rgba(190, 233, 182, 0), rgb(127, 221, 224)); text-align: center; text-shadow: 2px 2px 4px rgb(5,68,104);">Personal Details</h1>
+    <div class="container">
+    <ul class="myul">
         <li><b>Profile Photo:</b>
             <figure>
                 <img src="resources\developer.png" alt="Developer Photo">
                 <figcaption>Ritu Dantakale</figcaption>
             </figure>
         </li><br>
-        <li><b>Mobile Number:</b>&nbsp;9373038041</li><br>
+        <li><b>Mobile Number:</b>9373038041</li><br>
         <li><b>Email:</b>&nbsp;ritudantakale7039@gmail.com</li><br>
-        <li><b>Date Of Birth:</b>&nbsp;28 Dec 1997</li><br>
-        <li><b>Address:</b>&nbsp;Samarth Nagar,Akkalkot</li><br>
+        <li><b>Date Of Birth:</b>28 Dec 1997</li><br>
+        <li><b>Address:</b>Samarth Nagar,Akkalkot</li><br>
         <li>
             <details>
                 <summary>Family Details</summary>
@@ -32,6 +42,7 @@
             </details>
         </li>
     </ul>
+</div>
 </body>
 
 </html>

@@ -1,4 +1,5 @@
-<html lang="en">
+<!DOCTYPE html>
+<html>
 
 <head>
     <link rel="icon" href="resources\favicon.jpg" type="image/x-icon">
@@ -7,45 +8,108 @@
     <!-- CDN link for font-awesome -->
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+
+        body{
+            background-image: linear-gradient(rgba(190, 233, 182, 0), rgb(127, 221, 224));
+}
+        
+        a:link,
+        a:visited {
+            color:white;
+        }
+
+        #profile {
+            color: black;
+        }
+
+        #envelope {
+            color:black;
+        }
+
+        #mobile {
+            color: black;
+        }
+
+        #linkedin {
+            color: #0E3EDA;
+        }
+
+        #insta {
+            color: #FC28FB;
+        }
+
+        #twitter {
+            color: #1572A1;
+        }
+
+        iframe{
+            background-color: #82DBD8;
+            
+        }
+
+        .headersection {
+            width: 540px;
+            background-image: linear-gradient(rgba(190, 233, 182, 0), rgb(127, 221, 224));;
+            position: relative;
+            left: 810px;
+
+        }
+
+        #footer {
+            color: #413F42;
+        }
+    </style>
 
 </head>
 
 <body>
-    <h1>My Profile</h1>
-    <header style="color:white; font-size:25px ; background-color:#D61C4E;">
-        <div>
+
+    <header style="color:#371B58; font-size:17px ; text-align: left;">
+        <div class="headersection">
             <p>
-                <i class="fa fa-user" aria-hidden="true"></i>Ritu Dantkale &nbsp;&nbsp;&nbsp;| &nbsp;&nbsp;&nbsp;
-                <i class="fa fa-envelope" aria-hidden="true"></i>ritudantakale7039@gmail.com&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-                <i class="fa fa-mobile" aria-hidden="true"></i>&nbsp;8483907509
+                <i id="profile" class="fa fa-user" aria-hidden="true"></i>&nbsp;&nbsp;Ritu Dantkale &nbsp;&nbsp;&nbsp;|
+                &nbsp;&nbsp;&nbsp;
+                <i id="envelope" class="fa fa-envelope"
+                    aria-hidden="true"></i>&nbsp;&nbsp;ritudantakale7039@gmail.com&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+                <i id="mobile" class="fa fa-mobile" aria-hidden="true"></i>&nbsp;&nbsp;8483 90 7509
             </p>
         </div>
     </header>
     <hr>
 
-    <nav>
-        <a href="home.html" target="myframe">HOME</a>&nbsp;|&nbsp;
-        <a href="tech_stack.html" target="myframe">TECH STACK</a>&nbsp;|&nbsp;
-        <a href="Education.html"target="myframe">EDUCATION</a>&nbsp;|&nbsp;
-        <a href="Project.html"target="myframe">PROJECT</a>&nbsp;|&nbsp;
-        <a href="hobbies.html"target="myframe">HOBBIES</a>&nbsp;|&nbsp;
-        <a href="personalDetails.html"target="myframe">PERSONAL DETAILS</a>&nbsp;|&nbsp;
-        <a href="others.html"target="myframe">OTHERS   </a>
+    <nav style="text-align:center; background-image: linear-gradient(rgb(5,68,104), rgb(127, 221, 224)); font-size: large;">
+        <a href="home.html" target="myframe">HOME</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+        <a href="tech_stack.html" target="myframe">TECH STACK</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+        <a href="Education.html" target="myframe">EDUCATION</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+        <a href="Project.html" target="myframe">PROJECT</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+        <a href="hobbies.html" target="myframe">HOBBIES</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+        <a href="personalDetails.html" target="myframe">PERSONAL DETAILS</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+        <a href="others.html" target="myframe">OTHERS </a>
     </nav>
     <hr>
     <div>
-        <iframe width="700px" height="600px" name="myframe" src="home.html" style="border:none;">
 
-        </iframe>
+        <center>
+            <iframe style="border: 2px solid rgb(0, 0, 0);
+            border-radius: 25px;" height="450px" width="800px"  name="myframe" src="home.html" style="border:none;"></iframe>
+        </center>
+
+
     </div>
-<footer>
-    
-    <p>Follow Me:  
-        <a href="http://www.linkedin.com" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>&nbsp;&nbsp;  
-        <a href="https://www.instagram.com/ritu_dantakale" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>&nbsp;&nbsp;  
-        <a href="https://twitter.com/ritu_dantakale"target="_bank"> <i class="fa fa-twitter-square" aria-hidden="true"></i></a>
-    </p>
-</footer>
+    <footer style="font-size:25px; ">
+        <center id="footer">
+            <p><b>Follow Me:</b>&nbsp;&nbsp;
+                <a id="linkedin" href="http://www.linkedin.com" target="_blank"><i class="fa fa-linkedin-square"
+                        aria-hidden="true"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;
+                <a id="insta" href="https://www.instagram.com/ritu_dantakale" target="_blank"><i class="fa fa-instagram"
+                        aria-hidden="true"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;
+                <a id="twitter" href="https://twitter.com/ritu_dantakale" target="_bank"> <i
+                        class="fa fa-twitter-square" aria-hidden="true"></i></a>
+            </p>
+        </center>
+
+    </footer>
 </body>
 
 </html>

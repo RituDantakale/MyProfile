@@ -4,81 +4,160 @@
 <head>
 
     <title>Registraion Form</title>
+    <style>
+        label {
+            color: rgb(130, 238, 255);
+
+        }
+
+        input[type="text"],
+        input[type="number"],
+        input[type="email"],
+        input[type="password"],
+        input[type="date"],
+        input[type="time"],
+        input[type="week"],
+        textarea {
+            color: darkgoldenrod;
+            text-transform: capitalize;
+            border-radius: 10px;
+
+        }
+
+        input[type="submit"]:hover {
+            background-color: darkgoldenrod;
+        }
+
+        input:focus {
+            background-color: rgb(115, 155, 156);
+        }
+
+        .form {
+            text-align: center;
+
+        }
+
+        .container {
+            position: relative;
+            margin: 0 10%;
+            padding-top: 20px;
+            height: 625px;
+            width: 500px;
+            background: #152238;
+            border-radius: 25px;
+        }
+
+        .container:before,
+        .container:after {
+
+            border-radius: 25px;
+            content: '';
+            position: absolute;
+            top: -2px;
+            left: -2px;
+            background: linear-gradient(45deg, #fb0094, #0000ff, #00ff00, #ffff00, #ff0000);
+            background-size: 400%;
+            width: calc(100% + 4px);
+            height: calc(100% + 4px);
+            z-index: -1;
+            animation: animate 20s linear infinite;
+        }
+
+        .container:after {
+            filter: blur(200px);
+        }
+
+        @keyframes animate {
+            0% {
+                background-position: 0 0;
+            }
+
+            50% {
+                background-position: 400% 0;
+            }
+
+            100% {
+                background-position: 0 0;
+            }
+        }
+    </style>
 </head>
+<center>
 
-<body>
-    <h3></h3>
+    <body style="margin-top:2px; background-color: #152238; color:rgb(130, 238, 255);">
+        <div class="container">
+            <form style="width:550px">
 
-    <form>
-        <fieldset>
-            <legend>Student Registration Form</legend>
+                <legend class="form">
+                    <h2> Student Registration Form</h2>
+                </legend>
 
 
-            <form>
-                <table>
-                    <tbody>
+                <form>
+                    <table>
+
                         <tr>
-                            <td><label for="firstName">First Name</label></td>
+                            <td><label style="margin-top: 10px;" for="firstName">First Name</label></td>
                             <td><input type="text" maxlength="10" id="firstName" placeholder="only first name"></td>
                         </tr>
                         <tr>
-                            <td><label for="lastName">Last Name</label></td>
+                            <td><label style="margin-top: 10px;" for="lastName">Last Name</label></td>
                             <td><input type="text" id="lastName"></td>
                         </tr>
                         <tr>
-                            <td><label for="mobileNumber">Mobile Number</label></td>
+                            <td><label style="margin-top: 10px;" for="mobileNumber">Mobile Number</label></td>
                             <td><input type="number" id="mobileNumber" required autofocus
                                     placeholder="Please enter with country code"></td>
                         </tr>
 
                         <tr>
-                            <td><label> Email</label></td>
+                            <td><label style="margin-top: 10px;"> Email</label></td>
                             <td><input type="email" required placeholder="Example:abc@gmail.com"></td>
                         </tr>
                         <tr>
-                            <td><label>Password</label></td>
+                            <td><label style="margin-top: 10px;">Password</label></td>
                             <td><input type="password" required></td>
                         </tr>
                         <tr>
-                            <td><label>Country</label></td>
+                            <td><label style="margin-top: 10px;">Country</label></td>
                             <td><input type="text" value="India" readonly></td>
                         </tr>
 
                         <tr>
-                            <td><label>Do you have bank account</label></td>
+                            <td><label style="margin-top: 10px;">Do you have bank account</label></td>
                             <td><input type="text" value="Yes" disabled></td>
                         </tr>
 
                         <tr>
-                            <td><label>Date Of Birth</label></td>
+                            <td><label style="margin-top: 10px;">Date Of Birth</label></td>
                             <td><input type="date"></td>
                         </tr>
 
                         <tr>
-                            <td><label>Available in week</label></td>
+                            <td><label style="margin-top: 10px;">Available in week</label></td>
                             <td><input type="week"></td>
                         </tr>
 
                         <tr>
-                            <td><label>Preferd Time</label></td>
+                            <td><label style="margin-top: 10px;">Preferd Time</label></td>
                             <td><input type="time"></td>
                         </tr>
 
                         <tr>
-                            <td><label>Select Profile Photo</label></td>
+                            <td><label style="margin-top: 10px;">Select Profile Photo</label></td>
                             <td><input type="file"></td>
                         </tr>
 
                         <tr>
-                            <td><label>Select Certificates</label></td>
+                            <td><label style="margin-top: 10px;">Select Certificates</label></td>
                             <td>
-                                <input type="file" multiple>
+                                <input style="margin-top: 10px;" type="file" multiple>
                             </td>
 
                         </tr>
 
                         <tr>
-                            <td><label>Select Graduation</label></td>
+                            <td><label style="margin-top: 10px;">Select Graduation</label></td>
                             <td>
                                 <select>
                                     <option>BE</option>
@@ -90,7 +169,7 @@
                         </tr>
 
                         <tr>
-                            <td><label>Select Graduation </label></td>
+                            <td><label style="margin-top: 10px;">Select Graduation </label></td>
                             <td>
                                 <select>
                                     <optgroup label="Bachelor of Engineering">
@@ -114,7 +193,7 @@
                         </tr>
 
                         <tr>
-                            <td><label>Select Gender</label></td>
+                            <td><label style="margin-top: 10px;">Select Gender</label></td>
                             <td>
                                 <input type="radio" name="gender">
                                 <label>Male</label>
@@ -130,7 +209,7 @@
                         </tr>
 
                         <tr>
-                            <td><label>Please Select Traninings</label></td>
+                            <td><label style="margin-top: 10px;">Please Select Traninings</label></td>
                             <td>
                                 <input type="checkbox">
                                 <label>Angular</label>
@@ -144,7 +223,7 @@
                         </tr>
 
                         <tr>
-                            <td><label>Address</label></td>
+                            <td><label style="margin-top: 10px;">Address</label></td>
                             <td><textarea cols="30" rows="7"></textarea></td>
                         </tr>
 
@@ -153,12 +232,17 @@
                             <td><input type="reset"></td>
                         </tr>
 
-                    </tbody>
-                </table>
-            </form>
-        </fieldset>
-    </form>
+                        </tbody>
+                    </table>
+                </form>
 
-</body>
+                </fieldset>
+            </form>
+        </div>
+
+
+
+    </body>
+</center>
 
 </html>
